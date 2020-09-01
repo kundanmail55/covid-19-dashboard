@@ -60,6 +60,10 @@ export class LoginPage extends Component {
     onClickHandler = (e, type) => {
         e.preventDefault()
         let card = document.querySelector('#card');
+        let errors = {
+            email: '', password: '', registrationEmail: '', registrationPassword: ''
+        }
+        this.setState({errors})
         if (card && type === 'signUp-card') card.classList.add('the-card-clicked');
         else if (card && type === 'login-card') card.classList.remove('the-card-clicked');
         else if (type === 'submit') {
