@@ -67,6 +67,7 @@ export class LoginPage extends Component {
                 try {
                     registerUser(this.state.registrationEmail, this.state.registrationPassword).then(response => {
                         if (response.user.email && response.user.refreshToken) {
+                            this.setState({registrationEmail: '',registrationPassword: ''})
                             this.notification(true, 'success', 'User Register Success', 'Please login to see the dashboard');
                         } else this.notification(true, 'error', 'Something Went Wrong', 'Please try again.')
                     })
@@ -93,7 +94,7 @@ export class LoginPage extends Component {
             <>
             {loading ? <Spinner/> :
             <GridStyle>
-                <section className="responsive-block">
+                <section>
                     <BackgroundImage/>
                 </section>
                 <section style={{margin: 'auto 0'}}>

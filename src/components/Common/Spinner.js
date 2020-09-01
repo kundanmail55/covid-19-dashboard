@@ -24,6 +24,9 @@ const Loader = styled.div`
     border-top-color: #fff;
     animation: ${spin} 1s ease-in-out infinite;
     -webkit-animation: ${spin} 1s ease-in-out infinite;
+    @media only screen and (max-width: 768px) { 
+        left: 41%;
+    }
 `;
 
 export const Spinner = () => <SpinnerWrapper><Loader/></SpinnerWrapper>

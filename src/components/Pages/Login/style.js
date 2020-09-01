@@ -5,6 +5,10 @@ export const GridStyle = styled.div`
     display: grid;
     grid-template-columns: 65% 30%;
     grid-gap: 20px;
+    @media only screen and (max-width: 768px) { 
+        grid-template-columns:  100%;
+        padding-top: 37%;
+    }
 `;
 
 export const Inline = styled.div`
@@ -35,14 +39,12 @@ export const MainContainer = styled.div`
     height: 250px; 
     @media only screen and (max-width: 768px) { 
         position: static;
-        margin-top:60%;
     }
 `;
 
 export const CardContainer = styled.div`
     position: absolute;
     width: 100%;
-    height: 100%;
     transform-style: preserve-3d;
     transition: all 0.3s ease; 
 `;
