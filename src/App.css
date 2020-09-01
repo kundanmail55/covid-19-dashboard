@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.the-card-clicked {
+  transform: rotateY(180deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.totalconfirmed .ct-series-a .ct-area {
+  fill: #F08080;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.totalactive .ct-series-a .ct-area {
+  fill: #9CBEE1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.totalrecovered .ct-series-a .ct-area {
+  fill: #1EAD25;
 }
 
-.App-link {
-  color: #61dafb;
+.totaldeceased .ct-series-a .ct-area {
+  fill: #708090;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.totalconfirmed .ct-series-a .ct-line {
+  stroke: #E8253D;
+}
+
+.totalactive .ct-series-a .ct-line {
+  stroke: #1E5BAD;
+}
+
+.totalrecovered .ct-series-a .ct-line {
+  stroke: #2EA04B;
+}
+
+.totaldeceased .ct-series-a .ct-line {
+  stroke: #2F4F4F;
+}
+
+.error {
+  color:#db2269;
+  font-size: 10px;
+  position: absolute;
+  margin: -6px 10px;
 }
