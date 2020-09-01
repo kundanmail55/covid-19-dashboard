@@ -93,7 +93,7 @@ export class LoginPage extends Component {
             <>
             {loading ? <Spinner/> :
             <GridStyle>
-                <section>
+                <section className="responsive-block">
                     <BackgroundImage/>
                 </section>
                 <section style={{margin: 'auto 0'}}>

@@ -16,7 +16,7 @@ export const NavTitle = styled.h1`
 
 export const LayoutStyle = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: auto;
     grid-gap: 5px;
     padding: 20px;
@@ -25,7 +25,7 @@ export const LayoutStyle = styled.div`
 
 export const GridStyle = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 5px;
     margin: 1% 2% 2%;
 `;

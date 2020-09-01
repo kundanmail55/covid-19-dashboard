@@ -21,6 +21,9 @@ const NotificationWindow = styled.div`
     animation: ${slides} 2s backwards;
     -webkit-animation-delay: 5s;
     animation-delay: 5s;
+    @media only screen and (max-width: 768px) { 
+        width:80%;
+    }
 `;
 
 const NotificationTitle = styled.div`

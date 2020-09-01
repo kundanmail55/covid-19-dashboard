@@ -25,11 +25,18 @@ export const BackgroundImage = styled.div`
     height: 600px;
     background-position: center;
     background-position-y: 69px;
+    @media only screen and (max-width: 768px) { 
+        display: none;
+    }
 `;
 
 export const MainContainer = styled.div`
     position: relative;
     height: 250px; 
+    @media only screen and (max-width: 768px) { 
+        position: static;
+        margin-top:60%;
+    }
 `;
 
 export const CardContainer = styled.div`
